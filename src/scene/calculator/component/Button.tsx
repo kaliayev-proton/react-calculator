@@ -6,5 +6,5 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export const Button = ({text, className, ...rest}: ButtonProps)  => {
-    return (<button className={`p-1 w-full rounded-md ${className}`} {...rest}>{text}</button>)
+    return (<button className={`p-1 w-full rounded-md cursor-pointer transition-colors ${className}`} {...rest}>{text}</button>)
 }
